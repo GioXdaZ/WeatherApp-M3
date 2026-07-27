@@ -15,22 +15,23 @@ Se utilizó **BEM (Block, Element, Modifier)** para organizar las clases CSS:
 - **Modificadores**: `.btn--primary`, `.btn--secondary`
 
 ## 🗂️ Estructura SASS
+```
 scss/
 ├── base/
-│ ├── _variables.scss # Colores, tipografías, espaciados, breakpoints
-│ ├── _reset.scss # Reset básico
-│ └── _typography.scss # Estilos de texto
+│ ├── _variables.scss
+│ ├── _reset.scss 
+│ └── _typography.scss
 ├── components/
-│ ├── _buttons.scss # Estilos de botones
-│ └── _place-card.scss # Cards de clima (index y detalle)
+│ ├── _buttons.scss
+│ └── _place-card.scss
 ├── layout/
 │ ├── _header.scss
 │ ├── _main.scss
 │ └── _footer.scss
 ├── utilities/
-│ └── _mixins.scss # Mixins (breakpoints, flex-center, sombras)
-└── main.scss # Archivo principal con @use
-
+│ └── _mixins.scss 
+└── main.scss
+```
 
 ## 🛠️ Tecnologías utilizadas
 
