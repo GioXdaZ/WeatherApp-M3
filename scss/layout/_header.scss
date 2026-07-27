@@ -1,0 +1,30 @@
+@use '../base/variables' as v;
+@use '../utilities/mixins' as m;
+
+.header {
+    background-color: v.$bg-header;
+    color: v.$color-text-light;
+    padding: v.$spacing-md v.$spacing-lg;
+    @include m.flex-center;
+    justify-content: space-between;
+
+    &__logo {
+        font-size: v.$font-size-xl;
+        font-weight: 700;
+        color: v.$color-accent;
+    }
+
+    &__nav {
+        display: flex;
+        gap: v.$spacing-md;
+
+        a {
+            color: v.$color-text-light;
+            transition: color 0.3s ease;
+
+            &:hover {
+                color: v.$color-accent;
+            }
+        }
+    }
+}

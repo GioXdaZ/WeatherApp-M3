@@ -1,0 +1,128 @@
+@use '../base/variables' as v;
+@use '../utilities/mixins' as m;
+
+// Index
+
+.place-card {
+    background-color: v.$bg-card;
+    border-radius: v.$border-radius-lg;
+    padding: v.$spacing-md;
+    text-align: center;
+    @include m.card-shadow;
+    transition: transform 0.3s ease;
+
+    &:hover {
+        transform: translateY(-4px);
+    }
+
+    &__name {
+        font-size: v.$font-size-lg;
+        font-weight: 700;
+        color: v.$color-text-dark;
+        margin-bottom: v.$spacing-xs;
+    }
+
+    &__country {
+        font-size: v.$font-size-sm;
+        color: v.$color-text-muted;
+        margin-bottom: v.$spacing-md;
+    }
+
+    &__icon {
+        font-size: 48px;
+        margin-bottom: v.$spacing-sm;
+    }
+
+    &__temp {
+        font-size: v.$font-size-xl;
+        font-weight: 700;
+        color: v.$color-text-dark;
+        margin-bottom: v.$spacing-xs;
+    }
+
+    &__condition {
+        font-size: v.$font-size-sm;
+        color: v.$color-text-muted;
+        margin-bottom: v.$spacing-md;
+    }
+
+    &__details {
+        display: flex;
+        justify-content: space-around;
+        font-size: v.$font-size-sm;
+        color: v.$color-text-muted;
+    }
+
+    &__min,
+    &__max {
+        span {
+            font-weight: 600;
+            color: v.$color-text-dark;
+        }
+    }
+}
+
+// Detail
+
+.detail-card {
+    background-color: v.$bg-card;
+    border-radius: v.$border-radius-lg;
+    padding: v.$spacing-lg;
+    box-shadow: v.$box-shadow-card;
+    max-width: 600px;
+    margin: 0 auto;
+
+    &__header {
+        text-align: center;
+        margin-bottom: v.$spacing-md;
+
+        h2 {
+            font-size: v.$font-size-xl;
+            color: v.$color-text-dark;
+        }
+
+        p {
+            color: v.$color-text-muted;
+        }
+    }
+
+    &__body {
+        .display-1 {
+            font-size: 64px;
+        }
+
+        .display-4 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: v.$color-text-dark;
+        }
+
+        .fs-4 {
+            color: v.$color-text-muted;
+        }
+
+        .gap-4 span {
+            font-size: v.$font-size-sm;
+            color: v.$color-text-muted;
+
+            strong {
+                color: v.$color-text-dark;
+            }
+        }
+    }
+}
+
+// Cards Pronostico
+
+.forecast-card {
+    background-color: v.$bg-card; // ← mismo color que las cards del index
+    border-radius: v.$border-radius-md;
+    padding: v.$spacing-sm;
+    box-shadow: v.$box-shadow-card;
+    transition: transform 0.3s ease;
+
+    &:hover {
+        transform: translateY(-4px);
+        box-shadow: v.$box-shadow-hover;
+    }
+}

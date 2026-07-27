@@ -1,0 +1,47 @@
+@use '../base/variables' as v;
+
+
+.btn {
+    display: inline-block;
+    padding: v.$spacing-sm v.$spacing-lg;
+    border-radius: v.$border-radius-md;
+    font-size: v.$font-size-base;
+    font-weight: 600;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    border: none;
+
+    &:hover {
+        transform: translateY(-2px);
+    }
+
+    &--primary {
+        background-color: v.$color-accent;
+        color: v.$color-white;
+
+        &:hover {
+            background-color: rgba(190, 140, 80, 1);
+        }
+    }
+
+    &--secondary {
+        background-color: v.$color-secondary;
+        color: v.$color-white;
+
+        &:hover {
+            background-color: rgba(70, 45, 35, 1);
+        }
+    }
+
+    &--outline {
+        background-color: transparent;
+        color: v.$color-accent;
+        border: 2px solid v.$color-accent;
+
+        &:hover {
+            background-color: v.$color-accent;
+            color: v.$color-white;
+        }
+    }
+}

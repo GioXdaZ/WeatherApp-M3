@@ -1,0 +1,272 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Segoe UI", Roboto, Arial, sans-serif;
+  background-color: rgb(250, 242, 230);
+  color: rgb(62, 39, 35);
+  line-height: 1.6;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+
+h1, h2, h3, h4 {
+  font-weight: 700;
+  color: rgb(62, 39, 35);
+}
+
+h1 {
+  font-size: 36px;
+}
+
+h2 {
+  font-size: 28px;
+}
+
+h3 {
+  font-size: 20px;
+}
+
+h4 {
+  font-size: 16px;
+}
+
+p {
+  font-size: 16px;
+  color: rgb(93, 64, 55);
+  margin-bottom: 8px;
+}
+
+small {
+  font-size: 14px;
+}
+
+.header {
+  background-color: rgb(62, 39, 35);
+  color: rgb(255, 248, 240);
+  padding: 16px 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-between;
+}
+.header__logo {
+  font-size: 28px;
+  font-weight: 700;
+  color: rgb(215, 168, 110);
+}
+.header__nav {
+  display: flex;
+  gap: 16px;
+}
+.header__nav a {
+  color: rgb(255, 248, 240);
+  transition: color 0.3s ease;
+}
+.header__nav a:hover {
+  color: rgb(215, 168, 110);
+}
+
+.main {
+  padding: 24px;
+}
+.main__title {
+  font-size: 28px;
+  text-align: center;
+  margin-bottom: 24px;
+  color: rgb(62, 39, 35);
+}
+.main__subtitle {
+  text-align: center;
+  color: rgb(93, 64, 55);
+  margin-bottom: 32px;
+}
+.main__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 24px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+.footer {
+  background-color: rgb(62, 39, 35);
+  color: rgb(255, 248, 240);
+  padding: 16px 24px;
+  text-align: center;
+  margin-top: 32px;
+}
+.footer__text {
+  font-size: 14px;
+  color: rgb(93, 64, 55);
+}
+.footer__text strong {
+  color: rgb(215, 168, 110);
+}
+
+.btn {
+  display: inline-block;
+  padding: 8px 24px;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  text-align: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  border: none;
+}
+.btn:hover {
+  transform: translateY(-2px);
+}
+.btn--primary {
+  background-color: rgb(215, 168, 110);
+  color: rgb(255, 248, 240);
+}
+.btn--primary:hover {
+  background-color: rgb(190, 140, 80);
+}
+.btn--secondary {
+  background-color: rgb(93, 64, 55);
+  color: rgb(255, 248, 240);
+}
+.btn--secondary:hover {
+  background-color: rgb(70, 45, 35);
+}
+.btn--outline {
+  background-color: transparent;
+  color: rgb(215, 168, 110);
+  border: 2px solid rgb(215, 168, 110);
+}
+.btn--outline:hover {
+  background-color: rgb(215, 168, 110);
+  color: rgb(255, 248, 240);
+}
+
+.place-card {
+  background-color: rgb(245, 230, 211);
+  border-radius: 16px;
+  padding: 16px;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(62, 39, 35, 0.15);
+  transition: box-shadow 0.3s ease;
+}
+.place-card:hover {
+  box-shadow: 0 8px 24px rgba(62, 39, 35, 0.25);
+}
+.place-card {
+  transition: transform 0.3s ease;
+}
+.place-card:hover {
+  transform: translateY(-4px);
+}
+.place-card__name {
+  font-size: 20px;
+  font-weight: 700;
+  color: rgb(62, 39, 35);
+  margin-bottom: 4px;
+}
+.place-card__country {
+  font-size: 14px;
+  color: rgb(93, 64, 55);
+  margin-bottom: 16px;
+}
+.place-card__icon {
+  font-size: 48px;
+  margin-bottom: 8px;
+}
+.place-card__temp {
+  font-size: 28px;
+  font-weight: 700;
+  color: rgb(62, 39, 35);
+  margin-bottom: 4px;
+}
+.place-card__condition {
+  font-size: 14px;
+  color: rgb(93, 64, 55);
+  margin-bottom: 16px;
+}
+.place-card__details {
+  display: flex;
+  justify-content: space-around;
+  font-size: 14px;
+  color: rgb(93, 64, 55);
+}
+.place-card__min span, .place-card__max span {
+  font-weight: 600;
+  color: rgb(62, 39, 35);
+}
+
+.detail-card {
+  background-color: rgb(245, 230, 211);
+  border-radius: 16px;
+  padding: 24px;
+  box-shadow: 0 4px 12px rgba(62, 39, 35, 0.15);
+  max-width: 600px;
+  margin: 0 auto;
+}
+.detail-card__header {
+  text-align: center;
+  margin-bottom: 16px;
+}
+.detail-card__header h2 {
+  font-size: 28px;
+  color: rgb(62, 39, 35);
+}
+.detail-card__header p {
+  color: rgb(93, 64, 55);
+}
+.detail-card__body .display-1 {
+  font-size: 64px;
+}
+.detail-card__body .display-4 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: rgb(62, 39, 35);
+}
+.detail-card__body .fs-4 {
+  color: rgb(93, 64, 55);
+}
+.detail-card__body .gap-4 span {
+  font-size: 14px;
+  color: rgb(93, 64, 55);
+}
+.detail-card__body .gap-4 span strong {
+  color: rgb(62, 39, 35);
+}
+
+.forecast-card {
+  background-color: rgb(245, 230, 211);
+  border-radius: 8px;
+  padding: 8px;
+  box-shadow: 0 4px 12px rgba(62, 39, 35, 0.15);
+  transition: transform 0.3s ease;
+}
+.forecast-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(62, 39, 35, 0.25);
+}/*# sourceMappingURL=main.css.map */

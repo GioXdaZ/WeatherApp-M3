@@ -1,0 +1,14 @@
+{
+  "name": "pf-m3",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch": "sass scss/main.scss css/main.css --watch",
+    "build": "sass scss/main.scss css/main.css --style=compressed"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

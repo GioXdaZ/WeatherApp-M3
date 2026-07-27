@@ -1,0 +1,61 @@
+// Colores
+
+// Colores principales
+$color-primary: rgb(62, 39, 35);      // Café oscuro
+$color-secondary: rgb(93, 64, 55);    // Café medio
+$color-accent: rgb(215, 168, 110);    // Caramelo
+$color-light: rgb(245, 230, 211);     // Crema claro
+$color-white: rgb(255, 248, 240);     // Blanco roto
+
+// Colores de texto
+$color-text-dark: rgb(62, 39, 35);
+$color-text-light: rgb(255, 248, 240);
+$color-text-muted: rgb(93, 64, 55);
+
+// Colores de fondo
+$bg-body: rgb(250, 242, 230);
+$bg-card: rgb(245, 230, 211);
+$bg-header: rgb(62, 39, 35);
+$bg-footer: rgb(62, 39, 35);
+
+// Colores de estado (clima)
+$color-sunny: rgb(255, 200, 50);
+$color-rainy: rgb(80, 120, 180);
+$color-cloudy: rgb(180, 190, 200);
+$color-snowy: rgb(220, 235, 245);
+
+
+// Tipografia
+$font-family-base: 'Segoe UI', Roboto, Arial, sans-serif;
+$font-size-base: 16px;
+$font-size-sm: 14px;
+$font-size-lg: 20px;
+$font-size-xl: 28px;
+$font-size-xxl: 36px;
+
+
+// Espaciados
+$spacing-xs: 4px;
+$spacing-sm: 8px;
+$spacing-md: 16px;
+$spacing-lg: 24px;
+$spacing-xl: 32px;
+$spacing-xxl: 48px;
+
+
+// Bordes y Sombras
+$border-radius-sm: 4px;
+$border-radius-md: 8px;
+$border-radius-lg: 16px;
+$border-radius-xl: 24px;
+
+$box-shadow-card: 0 4px 12px rgba(62, 39, 35, 0.15);
+$box-shadow-hover: 0 8px 24px rgba(62, 39, 35, 0.25);
+
+
+//Breakpoints Responsivos
+$breakpoint-mobile: 420px;
+$breakpoint-mobile-above: 421px;
+$breakpoint-desktop-below: 1023px;
+$breakpoint-desktop: 1024px;
+$breakpoint-wide: 1440px;

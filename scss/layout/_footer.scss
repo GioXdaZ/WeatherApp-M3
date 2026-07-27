@@ -1,0 +1,19 @@
+@use '../base/variables' as v;
+@use '../utilities/mixins' as m;
+
+.footer {
+    background-color: v.$bg-footer;
+    color: v.$color-text-light;
+    padding: v.$spacing-md v.$spacing-lg;
+    text-align: center;
+    margin-top: v.$spacing-xl;
+
+    &__text {
+        font-size: v.$font-size-sm;
+        color: v.$color-text-muted;
+
+        strong {
+            color: v.$color-accent;
+        }
+    }
+}
